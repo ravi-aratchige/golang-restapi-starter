@@ -11,7 +11,7 @@ This project also includes a demo SQLite database with mock data for you to try 
 
 ## Setup
 
-Make sure you have Golang installed.
+Make sure you have <a href="https://go.dev/doc/install">Go</a> installed.
 
 ### Linux / MacOS Systems
 
