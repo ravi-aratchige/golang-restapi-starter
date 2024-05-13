@@ -1,6 +1,6 @@
 # Golang RestAPI Starter
 
-This is my take on a boilerplate for a simple RestAPI built with Go (Golang).
+This is my take on a boilerplate for a simple RestAPI built with Go (Golang) :golang:
 
 This project uses:
 
