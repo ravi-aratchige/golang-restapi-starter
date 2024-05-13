@@ -1,6 +1,8 @@
 # Golang RestAPI Starter
 
-This is my take on a boilerplate for a simple RestAPI built with Go (Golang) :golang:
+<img src="./docs/img/golang.jpg" alt="Golang Gopher">
+
+This is my take on a boilerplate for a simple RestAPI built with Go (Golang).
 
 This project uses:
 
