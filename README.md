@@ -1,4 +1,4 @@
-# Golang RestAPI Starter
+# Golang RestAPI Starter :golang:
 
 This is my take on a boilerplate for a simple RestAPI built with Go (Golang).
 
