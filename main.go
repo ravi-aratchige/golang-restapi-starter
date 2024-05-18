@@ -1,21 +1,26 @@
 package main
 
 import (
-	"golang-restapi-starter/routes"
-
-	"github.com/gin-gonic/gin"
+	"fmt"
+	"log"
+	"net/http"
+	"rawdog-web-server/routes"
 )
 
 func main() {
-	// Initialize HTTP server
-	app := gin.Default()
+	// Define port
+	port := ":8080"
 
-	// Initialize base router
-	baseRouter := app.Group("/api/v1")
+	// Define root route and handler
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		log.Println("Hello from the webserver!")
+		fmt.Fprint(w, "Hello from the webserver!")
+	})
 
-	// Register all routes with base router
-	routes.RegisterRoutes(baseRouter)
+	// Bind routers to webserver
+	routes.RegisterAllRoutes()
 
-	// Start server
-	app.Run(":8080")
+	// Listen on 8080
+	log.Printf("Starting the server on %v", port)
+	http.ListenAndServe(port, nil)
 }

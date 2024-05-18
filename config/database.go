@@ -1,20 +1,20 @@
 package config
 
 import (
-	"golang-restapi-starter/models"
+	"rawdog-web-server/models"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
 
-func GetDbConnection() gorm.DB {
+func ConnectToDatabase() gorm.DB {
 	// Connect to the SQLite database
 	db, err := gorm.Open(sqlite.Open("todo.db"), &gorm.Config{})
 	if err != nil {
-		panic("failed to connect database")
+		panic("Failed to connect database")
 	}
 
-	// Auto-migrate the Todo model to create the table
+	// Auto-migrate models to create tables
 	db.AutoMigrate(&models.Todo{})
 
 	return *db

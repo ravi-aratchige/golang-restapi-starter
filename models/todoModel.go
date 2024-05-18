@@ -1,9 +1,8 @@
 package models
 
-import (
-	"gorm.io/gorm"
-)
+import "gorm.io/gorm"
 
+// Define todo model for database interaction
 type Todo struct {
 	gorm.Model
 	Title       string `json:"title"`

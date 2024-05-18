@@ -1,7 +1,7 @@
 .PHONY: install run
 
 install:
-	go get .
+	@go get .
 
 run:
-	go run .
+	@go run .
